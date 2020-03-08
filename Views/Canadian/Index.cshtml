@@ -1,0 +1,51 @@
+﻿@using YourNewCanadian.Models;
+@model IEnumerable<Canadian>
+
+<style>
+.jumbotron {
+        background: none;
+    }
+    h1 {
+        text-shadow: 0 0 7px #00ffff;
+
+    }
+
+    h3 {
+        background-color: rgba(255, 0, 0, 0.6);
+    }
+    h2 {
+        text-shadow: 0 0 7px #ffffff;
+        background-color: rgba(31, 246, 239, 0.80);
+    }
+</style >
+<div class="jumbotron text-center" style="color:black">
+    <h1> Your New Canadian Awaits!</h1>
+    <h3 class="text-center">
+        Based on the psychological profile we've created from your web-cam while you used our site, our All-Powerful AI matched you with
+        the perfect* Canadian you never knew you wanted!
+    </h3>
+    <br />
+    <br />
+    <br />
+
+    <h1 class="text-center" style="color:black"><b>** C O N G R A T U L A T I O N S **</b> <br /><br /></h1>
+
+    @foreach (var canadian in Model)
+    {
+
+        <h2 class="text-center" style="color:black">
+            Your official new Canadian is named <b>@canadian.first_name @canadian.last_name!</b><br />
+            They currently work for <b>@canadian.company_name</b>,<br /> and live with their family at
+            <b>@canadian.address</b> in <b>@canadian.city, @canadian.province</b> - <br />but not for long, amirite?!<br />
+            Text a <i>commanding message of ownership</i> to them <b>now</b>! <br />Their direct number is <b>@canadian.phone1</b>, <br />
+            and they can be reached 24 hours a day until their arrival at your home, or emailed
+            at <b>@canadian.email</b>, <br />but feel free to begin researching their background by contacting their
+            previous employer at <b>@canadian.web</b>! <br />They're required to tell you anything you want to know!
+        </h2>
+        <h5 class="text-center" style="color:black">*Please allow 1-2 business years for your Canadian to make the grueling on-foot trek to your home.</h5>
+    }
+</div>
+
+
+
+

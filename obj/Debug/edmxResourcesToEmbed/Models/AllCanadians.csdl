@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CanadiansModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Canadian">
+    <Key>
+      <PropertyRef Name="NewID" />
+    </Key>
+    <Property Name="NewID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="first_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="last_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="company_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="postal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="web" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="CanadiansEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Canadians" EntityType="Self.Canadian" />
+  </EntityContainer>
+</Schema>

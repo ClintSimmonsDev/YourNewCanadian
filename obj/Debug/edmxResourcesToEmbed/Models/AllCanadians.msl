@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CanadiansModelStoreContainer" CdmEntityContainer="CanadiansEntities3">
+    <EntitySetMapping Name="Canadians">
+      <EntityTypeMapping TypeName="CanadiansModel.Canadian">
+        <MappingFragment StoreEntitySet="Canadians">
+          <ScalarProperty Name="NewID" ColumnName="NewID" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="postal" ColumnName="postal" />
+          <ScalarProperty Name="phone1" ColumnName="phone1" />
+          <ScalarProperty Name="phone2" ColumnName="phone2" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="web" ColumnName="web" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
